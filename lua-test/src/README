@@ -1,0 +1,19 @@
+CONNECTION
+----------
+
+
+EPS-03
+======
+http://www.esp8266.com/viewtopic.php?f=6&t=1564&p=9396&hilit=GPIO#p9396
+>>>>>
+
+CH_PD -> VCC
+GPIO15 -> GND
+TX,RX -> RX,TX on FTDI232
+FTDI232 GND->esp03 GND
+LD33CV GND-> FTDI232 GND
+GPIO0 ->GND(for upload firmware)->VCC (for normal work)
+GPIO2->VCC(for upload firmware)->VCC or NC (for normal work)
+
+for resetting
+GPIO16 to GND (for this you must to connect red rounded area in picture with 0 ohm resistor or direct solder.)

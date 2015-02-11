@@ -1,0 +1,6 @@
+wifi.setmode(wifi.STATION)
+wifi.sta.config("SSID","password")
+print(wifi.sta.getip())
+tmr.alarm(0, 60000, 1, function()
+  dofile("speak.lua")
+end )
